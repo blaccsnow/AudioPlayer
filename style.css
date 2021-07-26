@@ -1,0 +1,115 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body {
+ height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ color:#e61d56;
+ background:#c0c0c0;
+}
+
+#container {
+ width:85%;
+ height:95%;
+ box-shadow:0 0 5px 3px black;
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ flex-direction:column;
+ border-radius:10px;
+}
+
+.theme{
+ background:#111;
+ box-shadow:0 0 5px 3px #fff;
+ transition:.5s;
+}
+
+#head-section {
+ display:flex;
+ justify-content:space-between;
+ max-width:90%;
+ height:40px;
+}
+
+#head-section h1 {
+ font-family:cursive;
+ font-size:35px;
+}
+
+.controls {
+ width:6%;
+ height:23px;
+}
+
+.controls-btn {
+ width:8%;
+}
+
+#play {
+ width:25%;
+ background:#e61d56;
+ border-radius:50%;
+ padding:20px;
+}
+
+#song-section {
+ width:350px;
+ height:720px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-direction:column;
+}
+
+#image-contain {
+ width:350px;
+ height:350px;
+ border-radius:50%;
+}
+
+#image-contain #song-image {
+ width:100%;
+ height:100%;
+ border-radius:50%;
+}
+
+#control-btn {
+ width:300px;
+ height:40px;
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ border:2px solid #111;
+ padding:35px;
+}
+
+#artist{
+ font-family:monospace;
+ padding:10px 0;
+ font-size:25px;
+ font-weight:bolder;
+}
+
+#song{
+ font-family:monospace;
+ font-size:20px;
+}
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
