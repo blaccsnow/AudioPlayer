@@ -69,6 +69,7 @@ artistName.innerText = allSongs[counter].artist
 songName.innerText = allSongs[counter].musicName
 audioElement.play();
 
+
 });
 
 
@@ -89,7 +90,7 @@ songImage.src = allSongs[counter].musicImage
 artistName.innerText = allSongs[counter].artist
 songName.innerText = allSongs[counter].musicName
 audioElement.play();
-
+songImage.classList.add("rotate")
 });
 
 
